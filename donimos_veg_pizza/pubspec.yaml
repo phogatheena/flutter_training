@@ -1,0 +1,26 @@
+name: donimos_pizza_website
+description: A Flutter web project for Donimos Veg Pizza
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  url_launcher: ^6.3.0
+  flutter_map: ^8.2.1
+  latlong2: ^0.9.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/pizzas/
+    - assets/garlic/
+    - assets/beverages/
