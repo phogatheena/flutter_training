@@ -10,7 +10,10 @@ class AboutPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('About Us')),
+      appBar: AppBar(
+        title: const Text('About Us'),
+        automaticallyImplyLeading: false,
+      ),
       body: ListView(
         padding: const EdgeInsets.all(12),
         children: [
@@ -31,7 +34,6 @@ class AboutPage extends StatelessWidget {
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 8),
-
           SizedBox(
             height: 250,
             child: FlutterMap(
@@ -43,8 +45,7 @@ class AboutPage extends StatelessWidget {
               ),
               children: [
                 TileLayer(
-                  urlTemplate:
-                  'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                  urlTemplate: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                   subdomains: const ['a', 'b', 'c'],
                   userAgentPackageName: 'com.example.donimos_pizza',
                 ),
@@ -65,7 +66,6 @@ class AboutPage extends StatelessWidget {
               ],
             ),
           ),
-
           const SizedBox(height: 12),
           ElevatedButton(
             onPressed: () => Navigator.of(context).pop(),

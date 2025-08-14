@@ -179,7 +179,7 @@ class _HomePageState extends State<HomePage> {
           Expanded(
             child: GridView.count(
               crossAxisCount: MediaQuery.of(context).size.width > 900 ? 3 : 1,
-              childAspectRatio: 1.6,
+              childAspectRatio: 2.2,
               padding: const EdgeInsets.all(12),
               children: shown()
                   .map(
